@@ -27,12 +27,13 @@
 
 - (int)calculateBoxesFitInsideToTheOtherBox: (Box*) box
 {
+  // caring physically fitting
+//  int hRatio = floor([box height] / [self height]);
+//  int wRatio = floor([box width]  / [self width]);
+//  int lRatio = floor([box length] / [self length]);
+//  return hRatio*wRatio*lRatio;
   
-  int hRatio = floor([box height] / [self height]);
-  int wRatio = floor([box width]  / [self width]);
-  int lRatio = floor([box length] / [self length]);
-
-  return hRatio*wRatio*lRatio;
+  return floor([box calculateVolume]/[self calculateVolume]);
 }
 
 - (NSString *)description
