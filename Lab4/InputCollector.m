@@ -7,7 +7,8 @@
 
 #import "InputCollector.h"
 
-@implementation InputCollector
+@implementation InputCollector{
+}
 
 
 + (NSString *)inputForPrompt:(NSString *)promptString
@@ -25,6 +26,29 @@
   NSString *cleanedInputStrings = [inputStrings stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
   
   return cleanedInputStrings;
+}
+
+- (instancetype)init
+{
+  if( self = [super init]){
+    _history = [NSMutableArray new];
+  }
+  return self;
+}
+
+- (void)addToHistory: (NSString*) command
+{
+  // [latest ..... oldest]
+  [[self history] insertObject:command atIndex:0];
+}
+
+- (void)displayHistory
+{
+  int displayLimit = (int) MIN(3, [[self history] count]) ;
+  NSLog(@"Your current command");
+  for (int i = 0; i < displayLimit; i++){
+    NSLog(@"- %@", [self history][i]);
+  }
 }
 
 @end

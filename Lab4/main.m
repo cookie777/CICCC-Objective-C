@@ -14,6 +14,7 @@ int main(int argc, const char * argv[]) {
   @autoreleasepool {
 
     ContactList *contactList = [[ContactList alloc] init];
+    InputCollector *inputCollector = [InputCollector new];
     
     while (YES) {
       NSString *userInput = [InputCollector inputForPrompt:
@@ -21,16 +22,20 @@ int main(int argc, const char * argv[]) {
                              "new - Create a new contact\n"
                              "list - List all contacts\n"
                              "show - Show specific contact with ID\n"
+                             "history - Show history of command\n"
                              "quit - Exit Application"
                              ];
+      [inputCollector addToHistory:userInput];
       
       if ([userInput isEqual: @"quit"]){break;}
       
       if ([userInput isEqual: @"new"]){
         NSString *userName = [InputCollector inputForPrompt:@"Input your full name: "];
         NSString *email    = [InputCollector inputForPrompt:@"Input your email address: "];
+        NSString *phoneKey    = [InputCollector inputForPrompt:@"Input your phone type: "];
+        NSString *phoneValue    = [InputCollector inputForPrompt:@"Input your phone number: "];
         
-        Contact *newContact = [[Contact alloc] initWithName:userName AndEmail:email];
+        Contact *newContact = [[Contact alloc] initWithName:userName AndEmail:email AndPhone: (NSMutableDictionary*)@{phoneKey:phoneValue}];
         [contactList addContact:newContact];
         continue;
       }
@@ -41,7 +46,14 @@ int main(int argc, const char * argv[]) {
       }
       
       if ([userInput isEqual: @"show"]){
-        NSString *id = [InputCollector inputForPrompt:@"Input the id of the contact: "];
+        NSString *inputIndex  = [InputCollector inputForPrompt:@"Contact id: "];
+        NSNumber *index = [[[NSNumberFormatter alloc] init] numberFromString: inputIndex];
+        [contactList displayContactByIndex: index];
+        continue;
+      }
+      
+      if ([userInput isEqual: @"history"]){
+        [inputCollector displayHistory];
         continue;
       }
 

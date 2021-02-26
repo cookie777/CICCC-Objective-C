@@ -18,20 +18,28 @@
   //private instance vars
   NSString* _name;
   NSString* _email;
+  NSMutableDictionary* _phone;
 }
 
-- (instancetype)initWithName: (NSString*) name AndEmail: (NSString*) email
+- (instancetype)initWithName: (NSString*) name AndEmail: (NSString*) email AndPhone: (NSMutableDictionary*) phone
 {
   if( self = [super init]){
     _name   = name;
     _email  = email;
+    _phone  = phone;
   }
   return self;
 }
 
 - (NSString *)description
 {
-  return [NSString stringWithFormat:@"\nname  : %@\nemail : %@",[self name],[self email]];
+  NSString *phoneText = @"";
+  for (NSString *key in [self phone]){
+    phoneText = [phoneText stringByAppendingFormat:@"%@ : %@\n", key, [self phone][key]];
+
+  }
+  
+  return [NSString stringWithFormat:@"\nname  : %@\nemail : %@\nphone number\n%@",[self name],[self email],phoneText];
 }
 
 @end

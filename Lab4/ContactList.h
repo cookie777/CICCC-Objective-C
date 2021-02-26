@@ -11,12 +11,12 @@
 NS_ASSUME_NONNULL_BEGIN
 // public
 @interface ContactList : NSObject
-// set static property. This require manual getter and setter.
-//@property (class, nonatomic) NSMutableArray* sampleContactList;
 
 - (instancetype)init;
 - (void)addContact:(Contact *)newContact;
 - (void)displayAllContact;
+- (void)displayContactByIndex: (NSNumber*) index;
+
 @end
 
 NS_ASSUME_NONNULL_END
