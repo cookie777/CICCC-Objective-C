@@ -12,6 +12,8 @@
 		4853232325E8997000D62616 /* InputCollector.m in Sources */ = {isa = PBXBuildFile; fileRef = 4853232225E8997000D62616 /* InputCollector.m */; };
 		4853232B25E89ED000D62616 /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = 4853232A25E89ED000D62616 /* Contact.m */; };
 		4853233225E8A28B00D62616 /* ContactList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4853233125E8A28B00D62616 /* ContactList.m */; };
+		485F57EC25E993A000ED1475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 485F57EB25E993A000ED1475 /* main.m */; };
+		485F57F725E9961500ED1475 /* NSString+PigLatin.m in Sources */ = {isa = PBXBuildFile; fileRef = 485F57F625E9961500ED1475 /* NSString+PigLatin.m */; };
 		488741AB25E7268500891145 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 488741AA25E7268500891145 /* main.m */; };
 		488741B425E7314F00891145 /* AdditionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 488741B325E7314F00891145 /* AdditionQuestion.m */; };
 		488741BD25E7478200891145 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 488741BC25E7478200891145 /* InputHandler.m */; };
@@ -31,6 +33,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		4853231425E88D0900D62616 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		485F57E725E993A000ED1475 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -70,6 +81,10 @@
 		4853232A25E89ED000D62616 /* Contact.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
 		4853233025E8A28B00D62616 /* ContactList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactList.h; sourceTree = "<group>"; };
 		4853233125E8A28B00D62616 /* ContactList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactList.m; sourceTree = "<group>"; };
+		485F57E925E993A000ED1475 /* Pig Latin */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Pig Latin"; sourceTree = BUILT_PRODUCTS_DIR; };
+		485F57EB25E993A000ED1475 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		485F57F525E9961500ED1475 /* NSString+PigLatin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+PigLatin.h"; sourceTree = "<group>"; };
+		485F57F625E9961500ED1475 /* NSString+PigLatin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+PigLatin.m"; sourceTree = "<group>"; };
 		488741A825E7268500891145 /* Maths */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Maths; sourceTree = BUILT_PRODUCTS_DIR; };
 		488741AA25E7268500891145 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		488741B225E7314F00891145 /* AdditionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdditionQuestion.h; sourceTree = "<group>"; };
@@ -93,6 +108,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4853231325E88D0900D62616 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485F57E625E993A000ED1475 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -123,6 +145,7 @@
 				489ED10125E5EFD9004DB138 /* Lab2 */,
 				488741A925E7268500891145 /* Maths */,
 				4853231725E88D0900D62616 /* Lab4 */,
+				485F57EA25E993A000ED1475 /* Pig Latin */,
 				484C0EEA25E467C700BE74DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -134,6 +157,7 @@
 				489ED10025E5EFD9004DB138 /* Lab2 */,
 				488741A825E7268500891145 /* Maths */,
 				4853231625E88D0900D62616 /* Lab4 */,
+				485F57E925E993A000ED1475 /* Pig Latin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,6 +182,16 @@
 				4853233125E8A28B00D62616 /* ContactList.m */,
 			);
 			path = Lab4;
+			sourceTree = "<group>";
+		};
+		485F57EA25E993A000ED1475 /* Pig Latin */ = {
+			isa = PBXGroup;
+			children = (
+				485F57EB25E993A000ED1475 /* main.m */,
+				485F57F525E9961500ED1475 /* NSString+PigLatin.h */,
+				485F57F625E9961500ED1475 /* NSString+PigLatin.m */,
+			);
+			path = "Pig Latin";
 			sourceTree = "<group>";
 		};
 		488741A925E7268500891145 /* Maths */ = {
@@ -221,6 +255,23 @@
 			productReference = 4853231625E88D0900D62616 /* Lab4 */;
 			productType = "com.apple.product-type.tool";
 		};
+		485F57E825E993A000ED1475 /* Pig Latin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485F57EF25E993A000ED1475 /* Build configuration list for PBXNativeTarget "Pig Latin" */;
+			buildPhases = (
+				485F57E525E993A000ED1475 /* Sources */,
+				485F57E625E993A000ED1475 /* Frameworks */,
+				485F57E725E993A000ED1475 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pig Latin";
+			productName = "Pig Latin";
+			productReference = 485F57E925E993A000ED1475 /* Pig Latin */;
+			productType = "com.apple.product-type.tool";
+		};
 		488741A725E7268500891145 /* Maths */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 488741AE25E7268500891145 /* Build configuration list for PBXNativeTarget "Maths" */;
@@ -269,6 +320,9 @@
 					4853231525E88D0900D62616 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					485F57E825E993A000ED1475 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					488741A725E7268500891145 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -294,6 +348,7 @@
 				489ED0FF25E5EFD9004DB138 /* Lab2 */,
 				488741A725E7268500891145 /* Maths */,
 				4853231525E88D0900D62616 /* Lab4 */,
+				485F57E825E993A000ED1475 /* Pig Latin */,
 			);
 		};
 /* End PBXProject section */
@@ -315,6 +370,15 @@
 				4853232325E8997000D62616 /* InputCollector.m in Sources */,
 				4853232B25E89ED000D62616 /* Contact.m in Sources */,
 				4853231925E88D0900D62616 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		485F57E525E993A000ED1475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485F57EC25E993A000ED1475 /* main.m in Sources */,
+				485F57F725E9961500ED1475 /* NSString+PigLatin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +548,22 @@
 			};
 			name = Release;
 		};
+		485F57ED25E993A000ED1475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		485F57EE25E993A000ED1475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		488741AC25E7268500891145 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -542,6 +622,15 @@
 			buildConfigurations = (
 				4853231A25E88D0900D62616 /* Debug */,
 				4853231B25E88D0900D62616 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485F57EF25E993A000ED1475 /* Build configuration list for PBXNativeTarget "Pig Latin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485F57ED25E993A000ED1475 /* Debug */,
+				485F57EE25E993A000ED1475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
