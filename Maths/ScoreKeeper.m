@@ -19,7 +19,7 @@
   float score = (float)[self rightGuesses]/ ([self rightGuesses] + [self wrongGuesses]);
   score = floor(score*100);
   
-  return [NSString stringWithFormat:@"\nscore: \n%zd right, %zd wrong ---- %.f%%",
+  return [NSString stringWithFormat:@"score: %zd right, %zd wrong ---- %.f%%",
           [self rightGuesses],
           [self wrongGuesses],
           score

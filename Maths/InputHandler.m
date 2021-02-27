@@ -16,7 +16,7 @@
   
 }
 
-+ (NSString* )init
++ (NSString* )getUserInput
 {
   
   // receive input as char []
