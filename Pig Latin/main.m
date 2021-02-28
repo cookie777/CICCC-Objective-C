@@ -11,8 +11,10 @@
 int main(int argc, const char * argv[]) {
   @autoreleasepool {
     // ‘Kale Chips' -> ‘Alekay Ipschay'.
-    NSString *sampleText = @"Kale Ch";
-    NSLog(@"%@",[sampleText stringByPigLatinization]);
+    NSLog(@"Alekay Ipschay :%@",[@"Kale Chips" stringByPigLatinization]);
+    NSLog(@"Yay Chay :%@",[@"y Ch" stringByPigLatinization]);
+    //    int (^howMany)(int, int) = ^(int a, int b){return a + b;};
   }
   return 0;
 }
+
