@@ -20,9 +20,13 @@
 		485F582725EA23E000ED1475 /* SubtractionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 485F582625EA23E000ED1475 /* SubtractionQuestion.m */; };
 		485F583425EA24AB00ED1475 /* MultiplicationQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 485F583325EA24AB00ED1475 /* MultiplicationQuestion.m */; };
 		485F584125EA251300ED1475 /* DivisionQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 485F584025EA251300ED1475 /* DivisionQuestion.m */; };
+		485F585F25EB043800ED1475 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 485F585E25EB043800ED1475 /* main.m */; };
+		485F586B25EB046500ED1475 /* Dice.m in Sources */ = {isa = PBXBuildFile; fileRef = 485F586A25EB046500ED1475 /* Dice.m */; };
+		485F587F25EB049400ED1475 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 488741BC25E7478200891145 /* InputHandler.m */; };
+		485F588825EB04AA00ED1475 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 485F588725EB04AA00ED1475 /* InputHandler.m */; };
+		485F589125EB04F600ED1475 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 485F589025EB04F600ED1475 /* GameController.m */; };
 		488741AB25E7268500891145 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 488741AA25E7268500891145 /* main.m */; };
 		488741B425E7314F00891145 /* Question.m in Sources */ = {isa = PBXBuildFile; fileRef = 488741B325E7314F00891145 /* Question.m */; };
-		488741BD25E7478200891145 /* InputHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 488741BC25E7478200891145 /* InputHandler.m */; };
 		488741C325E74B4D00891145 /* ScoreKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 488741C225E74B4D00891145 /* ScoreKeeper.m */; };
 		489ED10325E5EFD9004DB138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 489ED10225E5EFD9004DB138 /* main.m */; };
 		489ED10B25E5F019004DB138 /* Box.m in Sources */ = {isa = PBXBuildFile; fileRef = 489ED10A25E5F019004DB138 /* Box.m */; };
@@ -48,6 +52,15 @@
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 		485F57E725E993A000ED1475 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		485F585A25EB043800ED1475 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -103,6 +116,14 @@
 		485F583325EA24AB00ED1475 /* MultiplicationQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiplicationQuestion.m; sourceTree = "<group>"; };
 		485F583F25EA251300ED1475 /* DivisionQuestion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DivisionQuestion.h; sourceTree = "<group>"; };
 		485F584025EA251300ED1475 /* DivisionQuestion.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DivisionQuestion.m; sourceTree = "<group>"; };
+		485F585C25EB043800ED1475 /* Lab6 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Lab6; sourceTree = BUILT_PRODUCTS_DIR; };
+		485F585E25EB043800ED1475 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		485F586925EB046500ED1475 /* Dice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dice.h; sourceTree = "<group>"; };
+		485F586A25EB046500ED1475 /* Dice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dice.m; sourceTree = "<group>"; };
+		485F588625EB04AA00ED1475 /* InputHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InputHandler.h; sourceTree = "<group>"; };
+		485F588725EB04AA00ED1475 /* InputHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InputHandler.m; sourceTree = "<group>"; };
+		485F588F25EB04F600ED1475 /* GameController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		485F589025EB04F600ED1475 /* GameController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 		488741A825E7268500891145 /* Maths */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Maths; sourceTree = BUILT_PRODUCTS_DIR; };
 		488741AA25E7268500891145 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		488741B225E7314F00891145 /* Question.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Question.h; sourceTree = "<group>"; };
@@ -139,6 +160,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		485F585925EB043800ED1475 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		488741A525E7268500891145 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,6 +192,7 @@
 				488741A925E7268500891145 /* Maths */,
 				4853231725E88D0900D62616 /* Lab4 */,
 				485F57EA25E993A000ED1475 /* Pig Latin */,
+				485F585D25EB043800ED1475 /* Lab6 */,
 				484C0EEA25E467C700BE74DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -176,6 +205,7 @@
 				488741A825E7268500891145 /* Maths */,
 				4853231625E88D0900D62616 /* Lab4 */,
 				485F57E925E993A000ED1475 /* Pig Latin */,
+				485F585C25EB043800ED1475 /* Lab6 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -229,6 +259,20 @@
 			path = Question;
 			sourceTree = "<group>";
 		};
+		485F585D25EB043800ED1475 /* Lab6 */ = {
+			isa = PBXGroup;
+			children = (
+				485F585E25EB043800ED1475 /* main.m */,
+				485F586925EB046500ED1475 /* Dice.h */,
+				485F586A25EB046500ED1475 /* Dice.m */,
+				485F588625EB04AA00ED1475 /* InputHandler.h */,
+				485F588725EB04AA00ED1475 /* InputHandler.m */,
+				485F588F25EB04F600ED1475 /* GameController.h */,
+				485F589025EB04F600ED1475 /* GameController.m */,
+			);
+			path = Lab6;
+			sourceTree = "<group>";
+		};
 		488741A925E7268500891145 /* Maths */ = {
 			isa = PBXGroup;
 			children = (
@@ -236,12 +280,12 @@
 				485F581825EA202400ED1475 /* QuestionFactory.h */,
 				485F581925EA202400ED1475 /* QuestionFactory.m */,
 				485F584D25EA259300ED1475 /* Question */,
-				488741BB25E7478200891145 /* InputHandler.h */,
-				488741BC25E7478200891145 /* InputHandler.m */,
 				488741C125E74B4D00891145 /* ScoreKeeper.h */,
 				488741C225E74B4D00891145 /* ScoreKeeper.m */,
 				485F57FE25EA154100ED1475 /* QuestionManager.h */,
 				485F57FF25EA154100ED1475 /* QuestionManager.m */,
+				488741BB25E7478200891145 /* InputHandler.h */,
+				488741BC25E7478200891145 /* InputHandler.m */,
 			);
 			path = Maths;
 			sourceTree = "<group>";
@@ -310,6 +354,23 @@
 			productReference = 485F57E925E993A000ED1475 /* Pig Latin */;
 			productType = "com.apple.product-type.tool";
 		};
+		485F585B25EB043800ED1475 /* Lab6 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 485F586025EB043800ED1475 /* Build configuration list for PBXNativeTarget "Lab6" */;
+			buildPhases = (
+				485F585825EB043800ED1475 /* Sources */,
+				485F585925EB043800ED1475 /* Frameworks */,
+				485F585A25EB043800ED1475 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lab6;
+			productName = Lab6;
+			productReference = 485F585C25EB043800ED1475 /* Lab6 */;
+			productType = "com.apple.product-type.tool";
+		};
 		488741A725E7268500891145 /* Maths */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 488741AE25E7268500891145 /* Build configuration list for PBXNativeTarget "Maths" */;
@@ -361,6 +422,9 @@
 					485F57E825E993A000ED1475 = {
 						CreatedOnToolsVersion = 12.4;
 					};
+					485F585B25EB043800ED1475 = {
+						CreatedOnToolsVersion = 12.4;
+					};
 					488741A725E7268500891145 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -387,6 +451,7 @@
 				488741A725E7268500891145 /* Maths */,
 				4853231525E88D0900D62616 /* Lab4 */,
 				485F57E825E993A000ED1475 /* Pig Latin */,
+				485F585B25EB043800ED1475 /* Lab6 */,
 			);
 		};
 /* End PBXProject section */
@@ -420,6 +485,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		485F585825EB043800ED1475 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				485F586B25EB046500ED1475 /* Dice.m in Sources */,
+				485F589125EB04F600ED1475 /* GameController.m in Sources */,
+				485F588825EB04AA00ED1475 /* InputHandler.m in Sources */,
+				485F585F25EB043800ED1475 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		488741A425E7268500891145 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,11 +505,11 @@
 				485F580D25EA1C4100ED1475 /* AdditionQuestion.m in Sources */,
 				488741C325E74B4D00891145 /* ScoreKeeper.m in Sources */,
 				488741AB25E7268500891145 /* main.m in Sources */,
-				488741BD25E7478200891145 /* InputHandler.m in Sources */,
 				485F581A25EA202400ED1475 /* QuestionFactory.m in Sources */,
 				485F583425EA24AB00ED1475 /* MultiplicationQuestion.m in Sources */,
 				485F582725EA23E000ED1475 /* SubtractionQuestion.m in Sources */,
 				488741B425E7314F00891145 /* Question.m in Sources */,
+				485F587F25EB049400ED1475 /* InputHandler.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,6 +684,22 @@
 			};
 			name = Release;
 		};
+		485F586125EB043800ED1475 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		485F586225EB043800ED1475 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		488741AC25E7268500891145 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -675,6 +767,15 @@
 			buildConfigurations = (
 				485F57ED25E993A000ED1475 /* Debug */,
 				485F57EE25E993A000ED1475 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		485F586025EB043800ED1475 /* Build configuration list for PBXNativeTarget "Lab6" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				485F586125EB043800ED1475 /* Debug */,
+				485F586225EB043800ED1475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
