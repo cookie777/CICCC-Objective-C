@@ -27,7 +27,7 @@
 {
   NSArray *diceIcons = @[@"⚀", @"⚁", @"⚂", @"⚃", @"⚄", @"⚅"];
   
-  return diceIcons[[self value]];
+  return diceIcons[[self value]-1];
 }
 
 @end
