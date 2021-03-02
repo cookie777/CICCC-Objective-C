@@ -24,13 +24,13 @@
 {
   NSString *sizeStr;
   switch (_size) {
-    case small:
+    case PizzaSizeSmall:
       sizeStr = @"small";
       break;
-    case medium:
+    case PizzaSizeMedium:
       sizeStr = @"medium";
       break;
-    case large:
+    case PizzaSizeLarge:
       sizeStr = @"large";
       break;
 

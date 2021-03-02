@@ -10,6 +10,7 @@
 
 @implementation CheeryManager
 
+
 - (BOOL)kitchen:(nonnull Kitchen *)kitchen shouldMakePizzaOfSize:(enum PizzaSize)size andToppings:(nonnull NSArray *)toppings {
   return YES;
 }
@@ -19,7 +20,10 @@
 }
 
 - (void)kitchenDidMakePizza:(Pizza *)pizza{
-  NSLog(@"It’s on the house!🥳");
+  NSLog(@"Made a Pizza! It’s on the house!🥳");
+  
+  [_deliverService deliverPizza:pizza];
+  
 }
 
 @end

@@ -10,8 +10,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-enum PizzaSize{
-  small, medium, large
+
+typedef NS_ENUM(unsigned int, PizzaSize){
+  PizzaSizeSmall, PizzaSizeMedium, PizzaSizeLarge
 };
 
 @interface Pizza : NSObject

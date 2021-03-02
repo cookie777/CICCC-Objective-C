@@ -28,7 +28,7 @@
   Pizza *pizza;
   // if upgrade is on, force create large size
   if ([_delegate kitchenShouldUpgradeOrder: self]){
-    pizza = [[Pizza alloc] initWithSize: large toppings:toppings];
+    pizza = [[Pizza alloc] initWithSize: PizzaSizeLarge toppings:toppings];
   }else{
     pizza = [[Pizza alloc] initWithSize: size toppings:toppings];
   }
